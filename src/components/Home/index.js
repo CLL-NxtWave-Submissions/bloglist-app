@@ -1,5 +1,8 @@
 import './index.css'
 
+import UserInfo from '../UserInfo'
+import BlogList from '../BlogList'
+
 const blogsList = [
   {
     id: 1,
@@ -35,7 +38,10 @@ const blogsList = [
   },
 ]
 const Home = () => (
-  <div className="home-container">Render UserInfo and BlogList</div>
+  <div className="home-container">
+    <UserInfo />
+    <BlogList listData={blogsList} />
+  </div>
 )
 
 export default Home
