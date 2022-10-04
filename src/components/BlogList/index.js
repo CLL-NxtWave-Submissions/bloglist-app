@@ -6,8 +6,12 @@ const BlogList = props => {
 
   return (
     <ul className="blog-list-container">
-      {listData.map(listDataItem => (
-        <BlogItem key={listDataItem.id} itemData={listDataItem} />
+      {listData.map((listDataItem, listItemIndex) => (
+        <BlogItem
+          key={listDataItem.id}
+          itemData={listDataItem}
+          isFirstItem={listItemIndex === 0}
+        />
       ))}
     </ul>
   )

@@ -5,5 +5,12 @@
   align-items: center;
   width: 100%;
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 992px) {
+  .blog-list-container {
+    width: 70%;
+  }
 }
